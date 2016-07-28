@@ -10,5 +10,6 @@
 		"app.json",
 	],
 	"dependencies":[
+		"json",
 	]
 }
