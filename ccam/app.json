@@ -1,0 +1,22 @@
+{
+	"name":"ccam",
+	"version":{
+		"major":1,
+		"minor":0,
+		"build":1,
+	},
+	"files":[
+		"main.lua",
+		"app.json",
+	],
+	"dependencies":[
+		"ccam_lib",
+		"debug",
+		"json",
+		"net",
+		"utils",
+	],
+	"configuration":{
+		"debug_output":true,
+	},
+}
