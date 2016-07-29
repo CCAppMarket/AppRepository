@@ -11,5 +11,9 @@
 	],
 	"dependencies":[
 		"json",
-	]
+	],
+	"configuration":{
+		"debug_output":true,
+		"testoption":"yup",
+	},
 }
