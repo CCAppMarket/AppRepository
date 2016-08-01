@@ -1,0 +1,3 @@
+[submodule "ccam"]
+	path = ccam
+	url = https://github.com/CCAppMarket/ccam.git
