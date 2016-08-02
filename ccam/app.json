@@ -2,8 +2,8 @@
 	"name":"ccam",
 	"version":{
 		"major":1,
-		"minor":0,
-		"build":1
+		"minor":1,
+		"build":2
 	},
 	"files":[
 		"main.lua",

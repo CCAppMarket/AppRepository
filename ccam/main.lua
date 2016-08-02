@@ -5,11 +5,12 @@ local usage = "Usage: ccam <option> [application]"
         .. "\nAvaliable options:"
         .. "\n install to install an app"
         .. "\n update to update an app"
+        .. "\n updateall to update all apps and libraries"
         .. "\n remove to remove an app"
 
-if #args < 2 then
+if #args < 2 and args[1] ~= "updateall" then
 	print(usage)
-else
+elseif #args > 2 then
 	local option = args[1]
     local app_name = args[2]
     
@@ -26,4 +27,21 @@ else
 	else
 		print(usage)
 	end
+
+elseif #args < 2 and args[1] == "updateall" then
+	local apps = fs.list(CCAM_CONF.APP_DIR)
+	local libs = fs.list(CCAM_CONF.LIB_DIR)
+
+	-- Update apps
+	for _, v in pairs(apps) do
+		print("Updating app: " .. v)
+		ccam.updateApp(v, false)
+	end
+
+	-- Update libs
+	for _, v in pairs(libs) do
+		print("Updating lib: " .. v)
+		ccam.updateApp(v, true)
+	end
+
 end
