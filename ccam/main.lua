@@ -10,7 +10,7 @@ local usage = "Usage: ccam <option> [application]"
 
 if #args < 2 and args[1] ~= "updateall" then
 	print(usage)
-elseif #args > 2 then
+elseif #args == 2 then
 	local option = args[1]
     local app_name = args[2]
     
