@@ -27,17 +27,7 @@ if #args == 2 then
 	end
 
 elseif #args == 1 and args[1] == "updateall" then
-	-- Update apps
-	for _, v in pairs(fs.list(CCAM_CONF.APP_DIR)) do
-		print("\nUpdating app: " .. v)
-		ccam.update(v, false)
-	end
-
-	-- Update libs
-	for _, v in pairs(fs.list(CCAM_CONF.LIB_DIR)) do
-		print("\nUpdating lib: " .. v)
-		ccam.update(v, true)
-	end
+	ccam.updateall(false)
 
 else
 	print(usage)
