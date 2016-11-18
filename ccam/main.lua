@@ -29,6 +29,9 @@ if #args == 2 then
 elseif #args == 1 and args[1] == "updateall" then
 	ccam.updateall(false)
 
+elseif #args == 1 and args[1] == "list" then
+	ccam.list()
+	
 else
 	print(usage)
 end
