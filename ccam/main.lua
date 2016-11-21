@@ -16,26 +16,26 @@ if #args == 2 then
 
 
 	if option == "install" then
-		ccam.download(resource)
+		libccam.download(resource)
 
 	elseif option == "update" then
-		ccam.update(resource)
+		libccam.update(resource)
 
 	elseif option == "remove" then
-		ccam.delete(resource)
+		libccam.delete(resource)
 
   elseif option == "search" then
-    ccam.search(resource)
+    libccam.search(resource)
 
 	else
 		print(usage)
 	end
 
 elseif #args == 1 and args[1] == "updateall" then
-	ccam.updateall(false)
+	libccam.updateall(false)
 
 elseif #args == 1 and args[1] == "list" then
-	ccam.list()
+	libccam.list()
 
 else
 	print(usage)

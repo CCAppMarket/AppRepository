@@ -11,7 +11,7 @@
 	"configuration": [
 	],
 	"dependencies": [
-		"ccam",
+		"libccam",
 		"json",
 		"net",
 		"utils"
