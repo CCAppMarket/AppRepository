@@ -1,0 +1,19 @@
+{
+	"name":"testapp",
+	"version":{
+		"major":1,
+		"minor":0,
+		"build":2,
+	},
+	"files":[
+		"main.lua",
+		"app.json",
+	],
+	"dependencies":[
+		"json",
+	],
+	"configuration":{
+		"debug_output":true,
+		"testoption":"yup",
+	},
+}
